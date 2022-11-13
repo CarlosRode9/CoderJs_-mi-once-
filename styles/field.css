@@ -1,0 +1,95 @@
+/*Cancha*/
+#field.striped {
+  /*position: relative;*/
+  background: url("../assets/images/FootballCourt.png");
+  border-style: inset;
+  border-color: rgba(255, 255, 255, 0.69);
+  border-width: 2px;
+  display: inline-block;
+}
+
+#field {
+  height: 600px;
+  width: 480px;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.field-header-button {
+  float: right;
+  margin: 2.6px;
+}
+
+.field-container {
+  display: inline-block;
+}
+
+#teamNameHeader {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #c7c7c7;
+  text-align: center;
+  top: 10px;
+  right: 438px;
+}
+
+.field-header {
+  background-color: #0b1724;
+  border-radius: 5px;
+  border-style: inset;
+  border-color: rgba(255, 255, 255, 0.69);
+  border-width: 2px;
+  margin-bottom: 10px;
+}
+
+.team-load-select {
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 20px;
+  height: 40px;
+}
+
+.my-actions {
+  margin: 0 2em;
+}
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+
+.right-gap {
+  margin-right: auto;
+}
+
+.tap-target.switch-bg {
+  content: url("../assets/images/footballKit2.png");
+}
+
+.info-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.info-icon .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.info-icon:hover .tooltiptext {
+  visibility: visible;
+}

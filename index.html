@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Hojas de estilo importadas-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!--Hojas de estilo propias-->
+    <link href="./styles/index.css" rel="stylesheet" />
+    <link href="./styles/players.css" rel="stylesheet" />
+    <link href="./styles/tabs.css" rel="stylesheet" />
+    <link href="./styles/field.css" rel="stylesheet" />
+
+    <!--Favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Patada inicial</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-custom navbar-dark bg-opacity-50 bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="text-success font-monospace">"Mi"</i><i class="font-monospace">Once inicial</i></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="./index.html">Fútbol</a>
+            <a class="nav-link" href="#">Basquet</a>
+            <a class="nav-link disabled">E-Sports</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-container shadow">
+      <!--Pestañas para armado y configuración del equipo-->
+      <div class="column">
+        <div class="mytabs">
+          <input type="radio" id="teamTab" name="mytabs" checked="checked" />
+          <label for="teamTab">Mi Equipo</label>
+          <div class="tab">
+            <form id="teamForm">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control form-field"
+                  id="inputTeamName"
+                  placeholder="DREAM TEAM FC =)"
+                  style="width: 87%"
+                  required
+                />
+                <label for="floatingInput" class="css-exclusion"
+                  >Nombre del equipo</label
+                >
+              </div>
+              <div class="form-floating">
+                <select
+                  class="form-select form-field"
+                  id="selectSport"
+                  aria-label="Fútbol"
+                  name="selectSport"
+                  role="option"
+                >
+                  <option value="football" selected>Fútbol</option>
+                  <option value="basketball">Básquet</option>
+                </select>
+                <label for="floatingSelect" class="css-exclusion"
+                  >Elegí qué deporte juega tu equipo</label
+                >
+              </div>
+              <div class="form-floating">
+                <select
+                  class="form-select form-field"
+                  id="selectPlayerAmount"
+                  name="selectPlayerAmount"
+                  role="option"
+                  aria-label="Floating label select example"
+                >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11" selected>11</option>
+                </select>
+                <label for="floatingSelect" class="css-exclusion"
+                  >¿Cuántos jugadores tiene tu equipo?</label
+                >
+              </div>
+              <button id="buttonBuild" class="btn btn-success" type="submit">
+                Arranca la goleada!
+              </button>
+            </form>
+          </div>
+
+          <input type="radio" id="mainPlayersTab" name="mytabs" />
+          <label id="mainPlayersTabLabel" for="mainPlayersTab" hidden
+            >Jugadores</label
+          >
+          <div class="tab" id="playersTab">
+            <div class="shirt-number-column"></div>
+            <div class="player-name-column"></div>
+            <div class="delete-icon-column"></div>
+            <div class="add-icon-container">
+              <img
+                src="../assets/images/PlusIcon.png"
+                class="add-icon-button"
+                id="playerAddButton"
+              />
+            </div>
+          </div>
+
+          <input type="radio" id="legacyTab" name="mytabs" />
+          <label id="legacyTablabel" for="legacyTab">Leyendas</label>
+          <div class="tab">
+            <h6 style="color: white; text-align: justify">
+              ¡Armá tu estratégia con equipos icónicos de distintas épocas!
+            </h6>
+            <br />
+            <div class="form-floating">
+              <select
+                class="form-select form-field"
+                id="selectLegacyTeam"
+                aria-label="Argentina 1986"
+                name="selectLegacyTeam"
+                role="option"
+              >
+                <option value="argentina1986" selected>Argentina 1986</option>
+                <option value="brasil2002">Brasil 2002</option>
+              </select>
+              <label for="floatingSelect" class="css-exclusion"
+                >Equipo de legado</label
+              >
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="loadLegacyTeamButton"
+              style="
+                background-color: rgb(181, 181, 0);
+                border-color: rgb(181, 181, 0);
+              "
+            >
+              Mis Dreams team!
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--Cancha-->
+      <div class="column" style="display: inline-block">
+        <div class="field-container">
+          <div
+            id="teamNameHeader"
+            class="container-sm field-header"
+            hidden
+          ></div>
+          <div class="container-sm field-header">
+
+            <div class="info-icon">
+              <img src="../assets/images/infoIcon.png" />
+              <span class="tooltiptext"
+                >!Clickea sobre una camiseta para tener un arquero!</span
+              >
+            </div>
+            <button
+              id="deleteTeamButton"
+              class="btn btn-danger field-header-button"
+              type="submit"
+              hidden
+            >
+              X
+            </button>
+            <button
+              id="loadTeamButton"
+              class="btn btn-success field-header-button"
+              type="submit"
+            >
+              LOAD
+            </button>
+            <button
+              id="saveTeamButton"
+              class="btn btn-primary field-header-button"
+              type="submit"
+            >
+              SAVE
+            </button>
+          </div>
+          <div class="striped" id="field"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--CDNs-->
+
+    <!--Librería de NAV VAR-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Libería de Drag and Drop-->
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+
+    <!--Librería de Sweet Alerts-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--Código propio-->
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
